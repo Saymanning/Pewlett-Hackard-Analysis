@@ -3,10 +3,11 @@
 ## Overview
 
 ### Purpose of Analysis
-THe purpose of the analysis wast to determine the number of employees retiring from Pewlett Hackard by job title and identify employees who are eligible to participate in a mentorship program. Provide a written report to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
+The purpose of the analysis wast to determine the number of employees retiring from Pewlett Hackard by job title and identify employees who are eligible to participate in a mentorship program. Provide a written report to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
 
 ###Results 
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.bulleted list with four major points from the two analysis deliverables.
+
 **Retiring Employees by Title**
 
 - The first step was to retrieve the number of employees retiring from Pewlett Hackard and also include their job title. The employee number, first name and last name were       retrieved from the columns in the the Employees table.
@@ -17,19 +18,18 @@ Query:
 
 <img width="351" alt="Retirement_Titles code" src="https://user-images.githubusercontent.com/78699465/114274412-45f5cb80-99ec-11eb-8bdb-2196b3a51dc2.png">
 
-Data Output - The number of retiting employees by title:
+Data Output Sample - The number of retiting employees by title:
 
 <img width="524" alt="Retirement_Titles" src="https://user-images.githubusercontent.com/78699465/114274452-6c1b6b80-99ec-11eb-9b2a-fe081ec74d91.png">
 
 - It was discovered that there were duplicate entries for some employees due to employees having switched titles over the years.
 - Using the DISTINCT ON statement, the first occurence of the employee number for each set of rows definds by the ON () clause was retrieved to eliminate the duplicates.
-- A new table," Unique Titles" was then created.
-
 
 <img width="320" alt="Dinstinct_ON" src="https://user-images.githubusercontent.com/78699465/114274723-d254be00-99ed-11eb-8b82-797cda873519.png">
 
+- A new table," Unique Titles" was then created.
 
-OUtput - Unique Titles Table:
+Data Output Sample - Unique Titles Table:
 
 <img width="422" alt="Unique_Titles_Table" src="https://user-images.githubusercontent.com/78699465/114274730-d97bcc00-99ed-11eb-88ae-25d04c8351f4.png">
 
@@ -47,24 +47,15 @@ OUtput - Unique Titles Table:
 
 **Employees who are eligible for the Mentorship Program**
 
-To find the employees eligible for the Mentorship Progem, a new query was written in order to create a table named, "Mentorship Eligiblity".
+- To find the employees eligible for the Mentorship Progem, a new query was written in order to create a table named, "Mentorship Eligiblity".
 
 <img width="354" alt="Mentorship_Eligible" src="https://user-images.githubusercontent.com/78699465/114275349-3ed0bc80-99f0-11eb-8aa3-b28ef493e8ee.png">
 
 The result:
+
 <img width="579" alt="Mentorship_Eligibility_table" src="https://user-images.githubusercontent.com/78699465/114275457-7dff0d80-99f0-11eb-9f7f-dae5fcf3f3bb.png">
 
 
-Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami.
+### Summary
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
-The summary addresses the two questions and contains two additional queries or tables that may provide more insight.
-
-The written analysis has the following structure, organization, and formatting:
-
-There is a title, and there are multiple sections.
-Each section has a heading and subheading.
-Links to images are working and displayed correctly.
+The data shows that there are 90,398 Pewlett Hackard employees reaching or, of retirement age. This appears to be a large number of roesl t be filled. A query to find out the total number of employees at Pewlett Hackard would provide better insight. It would also be benificial for providing more detailed data for the Mentorship Program to find out how many mentors are available and how many mentors for a specific job title. This could help the Mentorship Program be more successful if mentees and mentors are matched according to their desired career path and job title.
