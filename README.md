@@ -9,7 +9,7 @@ The purpose of this analysis was to determine the number of employees retiring f
 
 **Retiring Employees by Title**
 
-- The first step was to retrieve the number of employees retiring from Pewlett Hackard and also include their job title. The employee number, first name and last name were       retrieved from the columns in the the Employees table.
+- The first step was to retrieve the number of employees retiring from Pewlett Hackard and also include their job title. The employee number,   first name and last name were retrieved from the columns in the the Employees table.
 - Then the employee title, "from date" and "to date" were retrieved from the Titles table.
 - A new table was created using the primary key and the date was then filtered on the birth date column to retrieve employees born between 1952 and 1955 and ordered by the       employee number. See images below.
 
