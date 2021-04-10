@@ -3,10 +3,9 @@
 ## Overview
 
 ### Purpose of Analysis
-The purpose of the analysis wast to determine the number of employees retiring from Pewlett Hackard by job title and identify employees who are eligible to participate in a mentorship program. Provide a written report to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
+The purpose of this analysis wast to determine the number of employees retiring from Pewlett Hackard by job title and to identify employees who are eligible to participate in a mentorship program. A written report was also provided to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
 
-###Results 
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.bulleted list with four major points from the two analysis deliverables.
+### Results 
 
 **Retiring Employees by Title**
 
@@ -24,10 +23,12 @@ Data Output Sample - The number of retiting employees by title:
 
 - It was discovered that there were duplicate entries for some employees due to employees having switched titles over the years.
 - Using the DISTINCT ON statement, the first occurence of the employee number for each set of rows definds by the ON () clause was retrieved to eliminate the duplicates.
+- A new table," Unique Titles" was then created.
+
+DISTINCT ON Statement:
 
 <img width="320" alt="Dinstinct_ON" src="https://user-images.githubusercontent.com/78699465/114274723-d254be00-99ed-11eb-8b82-797cda873519.png">
 
-- A new table," Unique Titles" was then created.
 
 Data Output Sample - Unique Titles Table:
 
@@ -36,9 +37,12 @@ Data Output Sample - Unique Titles Table:
 
 - To hold the required information, a new table named. "Retiring Titles" was created by retrieving the number of titles from the Unique Titles table using the COUNT function.
 
+COUNT() Function:
+
 ![image](https://user-images.githubusercontent.com/78699465/114275040-01b7fa80-99ef-11eb-9b32-65a0766ed76f.png)
 
-
+Data Output Sample - Retiring Titles Table:
+ 
 <img width="272" alt="retiring_titles table" src="https://user-images.githubusercontent.com/78699465/114275737-a63b3c00-99f1-11eb-818a-c83c80c876bd.png">
 
 
@@ -51,11 +55,11 @@ Data Output Sample - Unique Titles Table:
 
 <img width="354" alt="Mentorship_Eligible" src="https://user-images.githubusercontent.com/78699465/114275349-3ed0bc80-99f0-11eb-8aa3-b28ef493e8ee.png">
 
-The result:
+Sample of the result:
 
 <img width="579" alt="Mentorship_Eligibility_table" src="https://user-images.githubusercontent.com/78699465/114275457-7dff0d80-99f0-11eb-9f7f-dae5fcf3f3bb.png">
 
 
 ### Summary
 
-The data shows that there are 90,398 Pewlett Hackard employees reaching or, of retirement age. This appears to be a large number of roesl t be filled. A query to find out the total number of employees at Pewlett Hackard would provide better insight. It would also be benificial for providing more detailed data for the Mentorship Program to find out how many mentors are available and how many mentors for a specific job title. This could help the Mentorship Program be more successful if mentees and mentors are matched according to their desired career path and job title.
+The data shows that there are 90,398 Pewlett Hackard employees reaching or, of retirement age. This appears to be a large number of roles to be filled. A query to find out the total number of employees at Pewlett Hackard would provide better insight. It would also be benificial for providing more detailed data for the Mentorship Program to find out how many mentors are available and how many mentors for a specific job title. This could help the Mentorship Program be more successful if mentees and mentors are matched according to their desired career path and job title.
