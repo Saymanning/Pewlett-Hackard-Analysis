@@ -3,7 +3,7 @@
 ## Overview
 
 ### Purpose of Analysis
-The purpose of this analysis wast to determine the number of employees retiring from Pewlett Hackard by job title and to identify employees who are eligible to participate in a mentorship program. A written report was also provided to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
+The purpose of this analysis was to determine the number of employees retiring from Pewlett Hackard by job title and to identify employees who are eligible to participate in a mentorship program. A written report was also provided to help the manager prepare for the upcoming "silver tsunami" as many employees reach retirement age.
 
 ### Results 
 
@@ -17,7 +17,7 @@ Query:
 
 <img width="351" alt="Retirement_Titles code" src="https://user-images.githubusercontent.com/78699465/114274412-45f5cb80-99ec-11eb-8bdb-2196b3a51dc2.png">
 
-Data Output Sample - The number of retiting employees by title:
+Data Output Sample - The number of retiring employees by title:
 
 <img width="524" alt="Retirement_Titles" src="https://user-images.githubusercontent.com/78699465/114274452-6c1b6b80-99ec-11eb-9b2a-fe081ec74d91.png">
 
@@ -52,6 +52,8 @@ Data Output Sample - Retiring Titles Table:
 **Employees who are eligible for the Mentorship Program**
 
 - To find the employees eligible for the Mentorship Progem, a new query was written in order to create a table named, "Mentorship Eligiblity".
+
+Query:
 
 <img width="354" alt="Mentorship_Eligible" src="https://user-images.githubusercontent.com/78699465/114275349-3ed0bc80-99f0-11eb-8aa3-b28ef493e8ee.png">
 
